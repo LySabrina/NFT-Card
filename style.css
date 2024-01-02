@@ -1,0 +1,154 @@
+:root {
+  --c-soft-blue: hsl(215, 51%, 70%);
+  --c-cyan: hsl(178, 100%, 50%);
+  --c-blue-bg: hsl(217, 54%, 11%);
+  --c-blue-card: hsl(216, 50%, 16%);
+  --c-card-line: hsl(215, 32%, 27%);
+  --c-white: hsl(0, 0%, 100%);
+
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-bold: 600;
+}
+* {
+  font-family: "Outfit", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--c-blue-bg);
+}
+
+.card {
+  background-color: var(--c-blue-card);
+  border-radius: 1em;
+  min-height: 10em;
+  max-width: 20em;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+/* 
+  IMAGE 
+*/
+.img-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-container > * {
+  max-width: 100%;
+
+  display: block;
+  padding: 1em;
+
+  border-radius: 1.5em;
+  border-radius: 1.5em;
+}
+
+.img-container:hover .view {
+  cursor: pointer;
+  display: flex;
+  background: hsl(178, 100%, 50%, 0.6);
+}
+
+.view {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+/* 
+  INFO CONTAINER
+*/
+.info {
+  margin: 0px 0.5em 0.5em 0.5em;
+  padding: 0.5em;
+  border-bottom: 2px solid var(--c-card-line);
+}
+
+.info > * {
+  margin: inherit;
+}
+
+.info > h1 {
+  color: var(--c-white);
+  font-size: 1.3rem;
+  margin: inherit;
+}
+
+.info > h1:hover {
+  color: var(--c-cyan);
+  cursor: pointer;
+}
+
+.description {
+  font-size: 1rem;
+  color: var(--c-soft-blue);
+  font-weight: var(--fw-light);
+}
+
+/* 
+  PRICE CONTAINER
+*/
+.price-container {
+  display: flex;
+  justify-content: space-between;
+}
+.price {
+  color: var(--c-cyan);
+  text-align: center;
+}
+
+.count-down {
+  color: var(--c-soft-blue);
+}
+
+/*
+    USER INFO
+*/
+
+.user-info {
+  display: flex;
+
+  align-items: center;
+
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+.user-info {
+  color: var(--c-soft-blue);
+}
+
+.user-info > p > span {
+  color: var(--c-white);
+}
+
+.user-info > p > span:hover {
+  color: var(--c-cyan);
+  cursor: pointer;
+}
+
+.user-info > img {
+  display: block;
+  border: 2px solid white;
+  border-radius: 50%;
+  max-width: 2em;
+  max-height: 2em;
+  margin-right: 0.5em;
+}
