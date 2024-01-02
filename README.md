@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/LySabrina/NFT-Card)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/LySabrina/NFT-Card)
+- Live Site URL: [Live Solution](https://your-live-site-url.com)
 
 ## My process
 
